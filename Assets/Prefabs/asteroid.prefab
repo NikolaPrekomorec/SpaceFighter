@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 212119810077912004}
   - component: {fileID: 50685606662722354}
   - component: {fileID: 70061634762070070}
+  - component: {fileID: 60117129254250294}
   m_Layer: 0
   m_Name: asteroid
   m_TagString: Untagged
@@ -35,8 +36,8 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1247970550063770}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.49, y: -0.72, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.178, y: 0.1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -62,13 +63,48 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!60 &60117129254250294
+PolygonCollider2D:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1247970550063770}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.45297468, y: 0.45859355}
+    oldSize: {x: 5.49, y: 4.06}
+    newSize: {x: 5.49, y: 4.06}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: -0.39009216, y: -1.1741912}
+      - {x: 0.3583161, y: -1.2053177}
+      - {x: 0.83260584, y: -0.73881394}
+      - {x: 1.467342, y: -0.7366245}
+      - {x: 1.8027848, y: -0.14521831}
+      - {x: 1.4061381, y: 0.60117626}
+      - {x: 0.57088995, y: 0.9702213}
+      - {x: -0.6377687, y: 0.93898255}
+      - {x: -1.5994686, y: 0.54527044}
+      - {x: -1.7655195, y: -0.25427833}
+      - {x: -1.0035787, y: -0.66307646}
 --- !u!70 &70061634762070070
 CapsuleCollider2D:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1247970550063770}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
